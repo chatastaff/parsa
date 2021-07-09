@@ -7,7 +7,7 @@ tokens.forEach((token, i) => {
   client.on("ready", async () => connection = await client.channels.cache.get(channels[i]).join());
 
   client.on("voiceStateUpdate", async (oldState, newState) => {
-    if ((oldState.channelID && !newState.channelID)  (oldState.channelID && newState.channelID && oldState.channelID === newState.channelID)  newState.member.user.bot || newState.channelID !== channels[i]) return;
+    if ((oldState.channelID && !newState.channelID)&&(oldState.channelID && newState.channelID && oldState.channelID === newState.channelID)&&newState.member.user.bot || newState.channelID !== channels[i]) return;
     const hasStaff = newState.channel.members.some((x)=> staffRoles.some((r) => x.roles.cache.has(r)));
     const staffSize = newState.channel.members.filter((x) => staffRoles.some((r) => x.roles.cache.has(r))).size;
     const unregisterSize = newState.channel.members.filter((x) => WelcomeS.some((r) => x.roles.cache.has(r))).size;
