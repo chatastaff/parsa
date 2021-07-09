@@ -19,5 +19,5 @@ tokens.forEach((token, i) => {
   client.on("ready", async () => {
   client.user.setPresence({ activity: { name: "ASHKAN UP " }, status: "idle" });
   })
-  client.login(token).then(() => console.log(${client.user.tag} Aktif!)).catch(() => console.error(${token} !));
+  client.login(token).then(() => console.log(`${client.user.tag} Aktif!`)).catch(() => console.error(`${token} !`));
 });
