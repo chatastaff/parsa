@@ -18,6 +18,6 @@
   "WelcomeS": [
     "863195279486353409"],
 
-  "welcomeSound": "https://cdn.discordapp.com/attachments/789846862165180456/867578532343578644/hosgeldin.mp3",
+  "welcomeSound": "default_files/<welcome-voice>.mp3",
   "staffSound": "https://discord.com/channels/@me/789846862165180456/867578534913114172"
 }
